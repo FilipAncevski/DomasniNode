@@ -1,0 +1,27 @@
+* {
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#root{
+    background-color: rgb(31, 31, 31)
+}
+
+#app h1{
+    text-align: center;
+}
+
+#container{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+#container div{
+    padding: 20px 0px
+}
+
+.image img{
+    width: 400px;
+    height: 400px
+}
