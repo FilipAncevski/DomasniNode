@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+}
+
+#root {
+    text-align: center;
+    background-color: bisque;
+    color: orange;
+    padding: 30px 0px;
+}
+
+#table {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+}
+
