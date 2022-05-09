@@ -1,0 +1,1 @@
+export const COMPLAIN_BURGER = "COMPLAIN_BURGER";
