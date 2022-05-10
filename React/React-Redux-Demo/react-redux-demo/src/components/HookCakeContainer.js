@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { buyCake } from "../redux";
 
 export const HookCakeCointainer = () => {
-  const numberOfCakes = useSelector((state) => state.numberOfCakes);
+  const numberOfCakes = useSelector((state) => state.cake.numberOfCakes);
 
   const dispatch = useDispatch();
 
