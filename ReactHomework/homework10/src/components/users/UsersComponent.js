@@ -1,7 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-export const UsersComponent = ({ listOfUsers, message }) => {
+export const UsersComponent = ({
+  listOfUsers,
+  message,
+  editUser,
+  deleteUser,
+}) => {
   return (
     <div>
       {listOfUsers ? (
@@ -11,6 +17,7 @@ export const UsersComponent = ({ listOfUsers, message }) => {
               <th>No.</th>
               <th>Name</th>
               <th>Email</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -20,6 +27,13 @@ export const UsersComponent = ({ listOfUsers, message }) => {
                   <td>{user.id}</td>
                   <td>{user.name}</td>
                   <td>{user.email}</td>
+                  <td>
+                    <button>
+                      <Link to={`/user/${user.id}`}>See User</Link>
+                    </button>
+                    <button onClick={() => editUser(user)}>Edit</button>
+                    <button onClick={() => deleteUser(user.id)}>Delete</button>
+                  </td>
                 </tr>
               );
             })}
